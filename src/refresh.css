@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  background-color: #fff;
+  -webkit-box-shadow: 3px 3px 3px #c5c5c5;
+          box-shadow: 3px 3px 3px #c5c5c5;
+  text-transform: uppercase;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 31px;
+}
+
+.header h3 {
+  font-family: "Courgette-Regular";
+  font-family: "Ranchers-Regular";
+  color: #ff0739;
+}
+
+.header .tit {
+  font-family: "Lobster-Regular";
+  color: #414141;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .side {
+  width: 27%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .side .IF {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .side .IF #IB {
+  position: relative;
+  width: 85%;
+  border: 2px solid #414141;
+  background-color: transparent;
+  color: #414141;
+  height: 35px;
+  border-radius: 7px;
+  margin-bottom: 6px;
+  text-indent: 4px;
+  text-transform: capitalize;
+  text-decoration: none;
+  outline: none;
+}
+
+.container .side .IF #IB.err {
+  border: 2px solid #ff0000;
+}
+
+.container .side .IF #IB::-webkit-input-placeholder {
+  font-family: "Roboto-Regular";
+}
+
+.container .side .IF #IB:-ms-input-placeholder {
+  font-family: "Roboto-Regular";
+}
+
+.container .side .IF #IB::-ms-input-placeholder {
+  font-family: "Roboto-Regular";
+}
+
+.container .side .IF #IB::placeholder {
+  font-family: "Roboto-Regular";
+}
+
+.container .side .IF #IS {
+  position: relative;
+  width: 22%;
+  height: 28px;
+  border: 2px solid #414141;
+  background-color: transparent;
+  color: black;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Roboto-Regular";
+}
+
+.container .side .IF #IS:hover {
+  background-color: #414141;
+  border: none;
+  color: white;
+}
+
+.container .main {
+  width: 73%;
+  margin-top: 5%;
+  height: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .main .tab {
+  position: relative;
+  min-width: 94%;
+  margin-left: 6%;
+  margin-bottom: 2%;
+  height: 9vh;
+  border-left: 9px solid #ff0739;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .main .tab.co {
+  border-left: 9px solid darkgray;
+}
+
+.container .main .tab .text {
+  position: relative;
+  width: 35%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .main .tab .text .txt {
+  text-indent: 3px;
+  font-size: 27px;
+  text-transform: capitalize;
+  font-family: "Poppins-Light";
+}
+
+.container .main .tab .text .txt.co {
+  text-decoration: line-through;
+  color: darkgray;
+}
+
+.container .main .tab .but {
+  position: relative;
+  width: 55%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .main .tab .but button {
+  position: relative;
+  width: 22%;
+  height: 60%;
+  margin-right: 9px;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.container .main .tab .but button:hover {
+  scale: 109%;
+  -webkit-transition: scale 0.3s ease-in-out;
+  transition: scale 0.3s ease-in-out;
+}
+
+.container .main .tab .but button.DE {
+  background-color: #ff0739;
+  color: white;
+}
+
+.container .main .tab .but button.CO {
+  background-color: #414141;
+  color: white;
+}
+/*# sourceMappingURL=refresh.css.map */
